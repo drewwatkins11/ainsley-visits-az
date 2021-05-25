@@ -22,13 +22,10 @@ const HighlightSlide = (props: HighlightSlideProps) => {
       h="100%"
       position="relative"
     >
-      <Flex h="100%" p="10" w="50px" justify="center" align="center">
-        next
-      </Flex>
       <Box
         position="absolute"
         bottom="10"
-        left={["10", "10", "100px"]}
+        left="10"
         boxShadow="xl"
         p="6"
         maxW={["80%", "80%", "500px"]}

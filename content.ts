@@ -1,61 +1,6 @@
 const content: Content = {
   areas: [
     {
-      name: "Prescott",
-      highlights: [
-        {
-          title: "Superstition Meadery",
-          description:
-            "Superstition Meadery is one of the can't-miss places in Prescott. Serving up impressive flights of some of the finest mead around, this is a true Prescott icon.",
-          photo: "https://i.redd.it/r4x1zcd92wq11.jpg",
-        },
-        {
-          title: "Whiskey Row",
-          description:
-            "Situated right in the center of town, Whiskey Row is Prescott's hub for shops, bars, and nightlife. From breweries, to country dancing, and even an arcade, there is plenty to keep us entertained along Whiskey Row. Who knows, maybe we'll even have to pick you up a pair of cowboy boots ;)",
-          photo:
-            "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/43/d2/2f/famous-whiskey-row-in.jpg",
-        },
-        {
-          title: "Goldwater Lakes #396",
-          description:
-            "This is one of my favorite hikes in the state. It has a great mix of varied scenery, is a good workout, and stays pretty cool in the afternoon.",
-          photo: "/images/goldwater-lakes-396.jpeg",
-          link: {
-            url: "https://hikearizona.com/decoder.php?ZTN=3157",
-            text: "Learn more about the Goldwater Lake trail on HikeArizona",
-          },
-        },
-      ],
-    },
-    {
-      name: "Mogollon Rim",
-      highlights: [
-        {
-          title: "FR 139C Campsite",
-          description:
-            "I've been going to this campsite for years and I consider it to be one of the most beautiful and secluded spots in the forest. The campsite is close to the Barbershop Trail (listed below) and is surrounded on three sides by a ravine that is fun to explore.",
-          photo: "../images/139c-campsite.jpeg",
-        },
-        {
-          title: "Rim Overlook",
-          description:
-            "The road to the campsite travels along what's known as the Mogollon Rim - ie. the edge of the Colorado Plateau. This is the line that seperates the high desert from the lower elevations and is a beautiful overlook.",
-          photo: "/images/rim.jpeg",
-        },
-        {
-          title: "Barbershop Trail #91",
-          description:
-            "One of my favorite trails in the state (even more than Goldwater Lakes), this is an indescribably beautiful, though quite strenuous, trail. (This is the one I showed you photos of on our video chat)",
-          photo: "../images/barbershop-trail-91.jpeg",
-          link: {
-            url: "https://hikearizona.com/decoder.php?ZTN=427",
-            text: "Learn more about the Barbershop Trail on HikeArizona",
-          },
-        },
-      ],
-    },
-    {
       name: "Superstitions",
       highlights: [
         {
@@ -92,6 +37,61 @@ const content: Content = {
           link: {
             text: "See all the details on HikeArizona",
             url: "https://hikearizona.com/decoder.php?ZTN=37",
+          },
+        },
+      ],
+    },
+    {
+      name: "Prescott",
+      highlights: [
+        {
+          title: "Whiskey Row",
+          description:
+            "Situated right in the center of town, Whiskey Row is Prescott's hub for shops, bars, and nightlife. From breweries, to country dancing, and even an arcade, there is plenty to keep us entertained along Whiskey Row. Who knows, maybe we'll even have to pick you up a pair of cowboy boots ;)",
+          photo:
+            "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/43/d2/2f/famous-whiskey-row-in.jpg",
+        },
+        {
+          title: "Superstition Meadery",
+          description:
+            "Superstition Meadery is one of the can't-miss places in Prescott. Serving up impressive flights of some of the finest mead around, this is a true Prescott icon.",
+          photo: "https://i.redd.it/r4x1zcd92wq11.jpg",
+        },
+        {
+          title: "Goldwater Lakes #396",
+          description:
+            "This is one of my favorite hikes in the state. It has a great mix of varied scenery, is a good workout, and stays pretty cool in the afternoon.",
+          photo: "/images/goldwater-lakes-396.jpeg",
+          link: {
+            url: "https://hikearizona.com/decoder.php?ZTN=3157",
+            text: "Learn more about the Goldwater Lake trail on HikeArizona",
+          },
+        },
+      ],
+    },
+    {
+      name: "Mogollon Rim",
+      highlights: [
+        {
+          title: "FR 139C Campsite",
+          description:
+            "I've been going to this campsite for years and I consider it to be one of the most beautiful and secluded spots in the forest. The campsite is close to the Barbershop Trail (listed below) and is surrounded on three sides by a ravine that is fun to explore.",
+          photo: "../images/139c-campsite.jpeg",
+        },
+        {
+          title: "Rim Overlook",
+          description:
+            "The road to the campsite travels along what's known as the Mogollon Rim - ie. the edge of the Colorado Plateau. This is the line that seperates the high desert from the lower elevations and is a beautiful overlook.",
+          photo: "/images/rim.jpeg",
+        },
+        {
+          title: "Barbershop Trail #91",
+          description:
+            "One of my favorite trails in the state (even more than Goldwater Lakes), this is an indescribably beautiful, though quite strenuous, trail. (This is the one I showed you photos of on our video chat)",
+          photo: "../images/barbershop-trail-91.jpeg",
+          link: {
+            url: "https://hikearizona.com/decoder.php?ZTN=427",
+            text: "Learn more about the Barbershop Trail on HikeArizona",
           },
         },
       ],

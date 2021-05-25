@@ -13,7 +13,7 @@ const HighlightSlider = (props: HighlightSliderProps) => {
   }, [currentArea]);
 
   return (
-    <Box height="80vh" shadow="2xl">
+    <Box height="85vh" shadow="2xl">
       <HighlightSlide
         key={highlights[currentSlide].title}
         highlight={highlights[currentSlide]}
@@ -31,5 +31,5 @@ export default HighlightSlider;
 
 interface HighlightSliderProps {
   highlights: AreaHighlight[];
-  currentArea: string;
+  currentArea: number;
 }
