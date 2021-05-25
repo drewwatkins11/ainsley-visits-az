@@ -197,7 +197,7 @@ const content: Content = {
             {
               type: "downTime",
               title: "Hang out at the campsite",
-              description: "Breakfast beers & chill?",
+              description: "Breakfast beers & chill??",
               duration: 180,
             },
             {
