@@ -71,7 +71,7 @@ const PackingList = () => {
       </Button>
       <Modal isOpen={isOpen} onClose={() => setOpen(false)}>
         <ModalOverlay />
-        <ModalContent backgroundColor="eggshell">
+        <ModalContent backgroundColor="#F5F5F5">
           <ModalHeader>Packing List</ModalHeader>
           <ModalCloseButton />
           <ModalBody pb="8">
