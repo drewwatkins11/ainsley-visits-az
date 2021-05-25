@@ -8,6 +8,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faArrowLeft,
   faArrowRight,
+  faClipboardList,
   faStopwatch,
   faTruckPickup,
 } from "@fortawesome/free-solid-svg-icons";
@@ -18,6 +19,7 @@ library.add(faStopwatch);
 library.add(faTruckPickup);
 library.add(faArrowRight);
 library.add(faArrowLeft);
+library.add(faClipboardList);
 
 // markup
 const IndexPage = () => {

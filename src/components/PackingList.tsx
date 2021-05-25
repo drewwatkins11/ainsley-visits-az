@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {
+  Box,
   Button,
   Modal,
   ModalOverlay,
@@ -8,11 +9,11 @@ import {
   ModalBody,
   ModalCloseButton,
   Stack,
-  CheckboxGroup,
   Checkbox,
   Text,
 } from "@chakra-ui/react";
 import content from "../../content";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const LocalCheckbox = ({
   id,
@@ -67,7 +68,10 @@ const PackingList = () => {
         shadow="lg"
         onClick={() => setOpen(true)}
       >
-        Packing List
+        <Box display="inline" mr="2">
+          <FontAwesomeIcon icon="clipboard-list" />
+        </Box>
+        Packing list
       </Button>
       <Modal isOpen={isOpen} onClose={() => setOpen(false)}>
         <ModalOverlay />
