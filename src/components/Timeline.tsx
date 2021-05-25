@@ -27,10 +27,10 @@ const Timeline = () => {
 
   return (
     <Box backgroundColor="#feefe5" p="12">
-      <Flex direction="column">
+      <Flex direction="column" mb="14">
         <Stack>
           <Heading as="h1" size="2xl">
-            The options
+            Our options
           </Heading>
           <Text>
             There are two main options that work with our schedule. One is

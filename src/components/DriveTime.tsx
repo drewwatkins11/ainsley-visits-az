@@ -1,6 +1,7 @@
 import React from "react";
-import { Stack, Heading, Text } from "@chakra-ui/react";
+import { Box, Stack, Heading, Text } from "@chakra-ui/react";
 import { DriveActivity } from "../../content";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const convertMinutes = (min: number) => {
   var hours = Math.floor(min / 60);
@@ -12,12 +13,21 @@ const DriveTimeActivity = (DriveTimeProps: DriveTimeProps) => {
   const { activity } = DriveTimeProps;
 
   return (
-    <Stack direction="column">
-      <Heading as="h4" size="md">
+    <Stack direction="column" color="slate">
+      <Heading as="h4" size="md" color="slate">
         {activity.title}
       </Heading>
-      <Text>{convertMinutes(activity.duration)}</Text>
-      {activity.description && <Text>{activity.description}</Text>}
+      <Text>
+        <Box mr="1" display="inline">
+          <FontAwesomeIcon icon="truck-pickup" />
+        </Box>
+        {convertMinutes(activity.duration)}
+      </Text>
+      {activity.description && (
+        <>
+          <Text>{activity.description}</Text>
+        </>
+      )}
     </Stack>
   );
 };

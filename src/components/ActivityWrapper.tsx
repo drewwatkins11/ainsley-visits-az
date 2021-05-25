@@ -61,9 +61,11 @@ const ActivityWrapper = (props: ActivityWrapperProps) => {
       ml="-1"
       flexBasis={["auto", "auto", props.flexBasis || undefined]}
       borderLeft={
-        activityType !== "driveTime" && activityType !== "downTime"
-          ? "4px solid black"
-          : "4px dotted black"
+        activityType === "driveTime"
+          ? "4px dotted black"
+          : activityType === "downTime"
+          ? "4px dashed black"
+          : "4px solid black"
       }
     >
       <Box

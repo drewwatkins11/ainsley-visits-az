@@ -20,7 +20,7 @@ const content: Content = {
           title: "Goldwater Lakes #396",
           description:
             "This is one of my favorite hikes in the state. It has a great mix of varied scenery, is a good workout, and stays pretty cool in the afternoon.",
-          photo: "../images/goldwater-lakes-396.jpeg",
+          photo: "/images/goldwater-lakes-396.jpeg",
           link: {
             url: "https://hikearizona.com/decoder.php?ZTN=3157",
             text: "Learn more about the Goldwater Lake trail on HikeArizona",
@@ -41,12 +41,12 @@ const content: Content = {
           title: "Rim Overlook",
           description:
             "The road to the campsite travels along what's known as the Mogollon Rim - ie. the edge of the Colorado Plateau. This is the line that seperates the high desert from the lower elevations and is a beautiful overlook.",
-          photo: "../images/rim.jpeg",
+          photo: "/images/rim.jpeg",
         },
         {
           title: "Barbershop Trail #91",
           description:
-            "One of my favorite trails in the state (even more than Goldwater Lakes), this is an indescribably beautiful, though extremely strenuous, trail. (This is the one I showed you photos of on our video chat)",
+            "One of my favorite trails in the state (even more than Goldwater Lakes), this is an indescribably beautiful, though quite strenuous, trail. (This is the one I showed you photos of on our video chat)",
           photo: "../images/barbershop-trail-91.jpeg",
           link: {
             url: "https://hikearizona.com/decoder.php?ZTN=427",
@@ -99,7 +99,7 @@ const content: Content = {
   ],
   options: [
     {
-      title: "Relaxing and exploring",
+      title: "Exploring and relaxing",
       overview:
         "A relaxing weekend with a night of camping up in the cool pines of the Mogollan Rim, along with a short day trip to Prescott and a fun night out in Phoenix.",
       days: [
@@ -196,7 +196,9 @@ const content: Content = {
           activities: [
             {
               type: "downTime",
-              title: "Relax for an hour or two in the morning at the campsite",
+              title: "Hang out at the campsite",
+              description: "Breakfast beers & chill?",
+              duration: 180,
             },
             {
               type: "activity",
@@ -213,7 +215,7 @@ const content: Content = {
               title: "Dinner and a night out",
               icon: "food",
               description:
-                "I have a nice dinner and a fun outdoor activity planned for the evening!",
+                "I have a nice dinner and a fun outdoor activity planned for the evening. Don't ask for too many details though, it's a surprise :)",
               surprise: true,
             },
             {
@@ -282,7 +284,7 @@ const content: Content = {
             },
             {
               type: "activity",
-              title: "Burger and a beer at Wilderness Brewery",
+              title: "Burger and a flight at Wilderness Brewery",
               icon: "food",
               description:
                 "Some of the best beer and burgers in the Valley, this place has some whopping burgers to recharge after our hike and some uniquely-Arizonian beers.",
@@ -373,6 +375,7 @@ const content: Content = {
             {
               type: "activity",
               title: "Brewery hopping",
+              duration: 180,
               icon: "drink",
             },
             {
@@ -400,6 +403,37 @@ const content: Content = {
       ],
     },
   ],
+  packingList: {
+    intro:
+      'In general, Arizona has a pretty laid-back dress code. The first time I visited for my college orientation, my dad and I were going to a nice steakhouse for dinner and asked the concierge at the hotel what we should wear. He laughed and said that "Arizona casual" is the fanciest one gets outside of a formal event (ie. jeans and a button down for men; a dress or jeans and a nice top for women). For most breweries and other places we\'ll visit, pretty much anything goes.',
+    items: [
+      {
+        item: "1-2 Casual outfits for breweries, etc.",
+        note: "ie. Shorts/tank tops/sundresses",
+        id: "casualOutfits",
+      },
+      {
+        id: "nightOutfit",
+        item: "Casual outfit for going out at night",
+        note: "ie. Jeans or shorts and a nice top, similar to my birthday. If we spend the night in Prescott, it'll get down into the 50s.",
+      },
+      {
+        id: "niceOutfit",
+        item: "Nice-ish outfit / dress",
+        note: 'Something suitable for an upscale dinner, yet cool enough to wear outside on a hot evening. Even better if it\'s a bit "spicy" or has a hispanic flair to it.',
+      },
+      { item: "Swimsuit", id: "swimsuit" },
+      { item: "Hiking clothes", id: "hikingClothes" },
+      { item: "Hiking boots", id: "hikingBoots" },
+      { item: "Water shoes", id: "waterShoes", note: "If doing Superstitions" },
+      { item: "Hat", note: "Something to block the sun on hikes", id: "hat" },
+      {
+        item: "Warm clothes / Columbia jacket / winter hat / gloves",
+        note: "Only if camping... plan on 40 degrees at night and a high of 70",
+        id: "warmClothes",
+      },
+    ],
+  },
 };
 
 export default content;
@@ -407,13 +441,23 @@ export default content;
 export interface Content {
   areas: Area[];
   options: Itinerary[];
+  packingList: PackingList;
+}
+export interface PackingList {
+  intro: string;
+  items: PackingListItem[];
+}
+interface PackingListItem {
+  item: string;
+  id: string;
+  note?: string;
 }
 interface Area {
   name: string;
   description?: string;
   highlights: AreaHighlight[];
 }
-interface AreaHighlight {
+export interface AreaHighlight {
   title: string;
   description: string;
   photo: string;

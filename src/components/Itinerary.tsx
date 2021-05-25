@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { Box, Flex, Heading, Stack, Text } from "@chakra-ui/react";
 import { Itinerary as ItineraryInterface } from "../../content";
 import ItineraryDay from "./ItineraryDay";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const convertMinutes = (min: number) => {
   var hours = Math.floor(min / 60);
@@ -60,6 +61,9 @@ const Itinerary = (props: ItineraryProps) => {
           </Heading>
         </Box>
         <Text>
+          <Box display="inline" mr="1">
+            <FontAwesomeIcon icon="truck-pickup" />
+          </Box>
           <i>Total drive time: {totalDriveTime}</i>
         </Text>
         <Text>{itinerary.overview}</Text>
