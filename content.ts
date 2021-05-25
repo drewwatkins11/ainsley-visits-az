@@ -60,7 +60,7 @@ const content: Content = {
         {
           title: "Goldwater Lakes #396",
           description:
-            "This is one of my favorite hikes in the state. It has a great mix of varied scenery, is a good workout, and stays pretty cool in the afternoon.",
+            "This is one of my favorite hikes in the state. It has a great mix of varied scenery, is a good workout, and stays relatively cool in the afternoon.",
           photo: "/images/goldwater-lakes-396.jpeg",
           link: {
             url: "https://hikearizona.com/decoder.php?ZTN=3157",
@@ -129,7 +129,7 @@ const content: Content = {
                   title: "Hike | Goldwater Lakes #396",
                   icon: "hiking",
                   description:
-                    "This is one of my favorite hikes in the state. It has a great mix of varied scenery, is a good workout, and stays pretty cool in the afternoon.",
+                    "This is one of my favorite hikes in the state. It has a great mix of varied scenery, is a good workout, and stays relatively cool in the afternoon.",
                 },
                 {
                   type: "activity",
@@ -182,7 +182,7 @@ const content: Content = {
               duration: 180,
               icon: "hiking",
               description:
-                "One of my favorite trails in the state (even more than Goldwater Lakes), this is an indescribably beautiful, though extremely strenuous, trail. (This is the one I showed you photos of on our video chat)",
+                "One of my favorite trails in the state (even more than Goldwater Lakes), this is an indescribably beautiful, though quite strenuous, trail. (This is the one I showed you photos of on our video chat)",
             },
             {
               type: "downTime",
@@ -231,7 +231,7 @@ const content: Content = {
     {
       title: "The best of Arizona",
       overview:
-        "A weekend exploring the best that AZ has to offer. We'll center the weekend around a trip to historic Prescott, AZ: starting with a hike in the pines, followed by evening of dancing and drinking. That night, we'll stay at a boutique hotel right in the heart of the town. Bookending this overnight trip will be an epic adventure in the Superstitions and a romantic evening in Phoenix, along with some flexibility to relax and take it easy at the house.",
+        "A weekend exploring the best that AZ has to offer. We'll center the weekend around a trip to historic Prescott, AZ: starting with a hike in the pines, followed by an evening of dancing and drinking. That night, we'll stay at a boutique western hotel right in the heart of the town. Bookending this overnight trip will be an epic adventure in the Superstitions and a romantic evening in Phoenix, along with some flexibility to relax and take it easy at the house.",
       days: [
         {
           day: "Thursday",
@@ -322,7 +322,7 @@ const content: Content = {
                   title: "Hike | Goldwater Lakes #396",
                   icon: "outdoorActivity",
                   description:
-                    "This is one of my favorite hikes in the state. It has a great mix of varied scenery, is a good workout, and stays pretty cool in the afternoon.",
+                    "This is one of my favorite hikes in the state. It has a great mix of varied scenery, is a good workout, and stays relatively cool in the afternoon.",
                 },
                 {
                   type: "activity",
