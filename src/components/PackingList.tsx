@@ -58,7 +58,8 @@ const PackingList = () => {
       <Button
         position="fixed"
         bottom="6"
-        right="6"
+        left="50%"
+        transform={"translate(-50%, 0)"}
         borderRadius="full"
         backgroundColor="terraCotta"
         color="eggshell"
