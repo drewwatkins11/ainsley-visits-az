@@ -14,15 +14,17 @@ const HighlightSlider = (props: HighlightSliderProps) => {
 
   return (
     <Box height="85vh" shadow="2xl">
-      <HighlightSlide
-        key={highlights[currentSlide].title}
-        highlight={highlights[currentSlide]}
-        totalSlides={totalSlides}
-        currentSlide={currentSlide}
-        changeSlide={(slide: number) => {
-          setCurrentSlide(slide);
-        }}
-      />
+      {!!highlights[currentSlide] && (
+        <HighlightSlide
+          key={highlights[currentSlide].title}
+          highlight={highlights[currentSlide]}
+          totalSlides={totalSlides}
+          currentSlide={currentSlide}
+          changeSlide={(slide: number) => {
+            setCurrentSlide(slide);
+          }}
+        />
+      )}
     </Box>
   );
 };
