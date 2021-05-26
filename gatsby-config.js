@@ -10,7 +10,13 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        icon: "src/images/logo.svg",
+        name: `Ainsley visits Arizona`,
+        short_name: `PHX Trip`,
+        start_url: `/`,
+        background_color: `#FFE8D6`,
+        theme_color: `#2a9d8f`,
+        display: `standalone`,
       },
     },
     "gatsby-plugin-mdx",
@@ -41,5 +47,6 @@ module.exports = {
       },
       __key: "pages",
     },
+    "gatsby-plugin-offline",
   ],
 };
