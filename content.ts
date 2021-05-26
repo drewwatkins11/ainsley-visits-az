@@ -108,7 +108,7 @@ const content: Content = {
           activities: [
             {
               type: "downTime",
-              title: "Relax and have breakfast",
+              title: "Settle in and have breakfast",
               description:
                 "We can take it easy and make breakfast at the house in the morning. If there's time, we can either stop for a beer before heading to Prescott or grab a breakfast burrito at one of the best Mexican restaurants in town!",
             },
@@ -187,7 +187,7 @@ const content: Content = {
             {
               type: "downTime",
               duration: 180,
-              title: "Relax at campsite for the evening",
+              title: "Chill at campsite for the evening",
             },
           ],
         },
@@ -220,7 +220,7 @@ const content: Content = {
             },
             {
               type: "downTime",
-              title: "Relax and pack",
+              title: "Wind down and pack",
               description:
                 "We'll wrap up our evening around 9, so we can either relax back at the house or head to a bar in the area.",
             },
@@ -291,7 +291,7 @@ const content: Content = {
             },
             {
               type: "downTime",
-              title: "Relax or go bar-hopping",
+              title: "Hang at the house or go bar-hopping",
               description:
                 "We may be exhasted after a long day in the sun, so we can head back to the house to relax. If we're up for it, this would be a great night to head to the piano bar up the street though!",
             },
@@ -394,7 +394,7 @@ const content: Content = {
             },
             {
               type: "downTime",
-              title: "Relax and pack",
+              title: "Wind down and pack",
               description:
                 "We'll wrap up our evening around 9, so we can either relax back at the house or head to a bar in the area.",
             },
