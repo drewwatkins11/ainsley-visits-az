@@ -48,7 +48,7 @@ const IndexPage = () => {
           spacing="1"
         >
           <Text color="charcoalBlue" fontWeight="bold">
-            Made with{" "}
+            Made for Ainsley, with
           </Text>
           <MotionText
             animate={{
@@ -64,10 +64,7 @@ const IndexPage = () => {
             }}
           >
             <FontAwesomeIcon color="#2a9d8f" icon="heart" />
-          </MotionText>{" "}
-          <Text color="charcoalBlue" fontWeight="bold">
-            for Ainsley
-          </Text>
+          </MotionText>
         </HStack>
       </Flex>
     </>
