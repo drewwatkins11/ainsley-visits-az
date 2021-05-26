@@ -68,7 +68,7 @@ const Itinerary = (props: ItineraryProps) => {
         </Text>
         <Text>{itinerary.overview}</Text>
       </Stack>
-      <Stack direction="column" spacing="10">
+      <Stack direction="column" spacing="14">
         {itinerary.days.map((day, index) => {
           return (
             <ItineraryDay
