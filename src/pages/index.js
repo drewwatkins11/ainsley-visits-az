@@ -32,6 +32,9 @@ const MotionText = motion(Text);
 const IndexPage = () => {
   return (
     <>
+      <Helmet>
+        <title>Ainsley visits Arizona</title>
+      </Helmet>
       <Fonts />
       <Flex direction="column">
         <Highlights />
