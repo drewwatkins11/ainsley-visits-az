@@ -58,7 +58,7 @@ const PackingList = () => {
     <>
       <Button
         position="fixed"
-        bottom="6"
+        bottom="8"
         left="50%"
         transform={"translate(-50%, 0)"}
         borderRadius="full"
