@@ -17,6 +17,7 @@ import PackingList from "../components/PackingList";
 import Highlights from "../components/Highlights";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 
 library.add(faStopwatch);
 library.add(faTruckPickup);

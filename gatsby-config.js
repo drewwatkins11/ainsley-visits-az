@@ -7,6 +7,12 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     `@chakra-ui/gatsby-plugin`,
     {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ["G-HKSVGMBH6Q"],
+      },
+    },
+    {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/images/logo.svg",
