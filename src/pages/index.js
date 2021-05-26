@@ -63,7 +63,7 @@ const IndexPage = () => {
             <FontAwesomeIcon color="#2a9d8f" icon="heart" />
           </MotionText>{" "}
           <Text color="charcoalBlue" fontWeight="bold">
-            by Drew
+            for Ainsley
           </Text>
         </HStack>
       </Flex>
