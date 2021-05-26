@@ -51,17 +51,17 @@ const IndexPage = () => {
             Made for Ainsley, with
           </Text>
           <MotionText
-            animate={{
-              scale: [1, 1.2, 1, 1.2, 1, 1],
-              rotate: [0, 10, 0, -10, 0, 0],
-            }}
-            transition={{
-              duration: 1.5,
-              ease: "easeInOut",
-              times: [0, 0.2, 0.4, 0.6, 0.8, 1],
-              loop: Infinity,
-              repeatDelay: 1,
-            }}
+          // animate={{
+          //   scale: [1, 1.2, 1, 1.2, 1, 1],
+          //   rotate: [0, 10, 0, -10, 0, 0],
+          // }}
+          // transition={{
+          //   duration: 1.5,
+          //   ease: "easeInOut",
+          //   times: [0, 0.2, 0.4, 0.6, 0.8, 1],
+          //   loop: Infinity,
+          //   repeatDelay: 1,
+          // }}
           >
             <FontAwesomeIcon color="#2a9d8f" icon="heart" />
           </MotionText>
